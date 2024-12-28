@@ -1,0 +1,23 @@
+{
+  "name": "cursogit",
+  "version": "1.0.0",
+  "description": "inicio un nuevo login",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BerniPas/cursogit.git"
+  },
+  "author": "Berni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BerniPas/cursogit/issues"
+  },
+  "homepage": "https://github.com/BerniPas/cursogit#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
