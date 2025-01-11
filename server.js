@@ -23,6 +23,10 @@ app.get('/formulario', function (req, res) {
     res.render('formulario')
 });
 
+app.get('/sucursales', function (req, res) {
+    res.render('sucursales')
+});
+
 /* para recibir datos desde el front */
 app.post('/formulario', function (req, res) {
 
