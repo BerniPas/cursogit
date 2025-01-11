@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.get('/', function (req, res) {
-    res.send('Bienvenidos a nuestro Primer Servidor con Express')
+    res.render('home')
 })
 
 app.get('/navidad', function (req, res) {
@@ -34,9 +34,11 @@ app.post('/formulario', function (req, res) {
 
 
     console.log('Datos recibidos ' + email + ' ' + password);
-    res.send('Datos recibidos');
+    res.render('datos', {
+        email: email,
+        password
+    });
 });
-
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto http://localhost:${PORT}`);
